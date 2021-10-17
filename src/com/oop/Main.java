@@ -45,11 +45,12 @@ public class Main {
         }
 
         // find all even numbers in the list
-        int [] evenNumbers = new int[];
+        int [] evenNumbers;
+
         int position = 0;
         for(int x = 0; i < numbers.size(); x++){
             if (numbers.get(x)  % 2 == 0){
-                evenNumbers[position] = numbers.get(x);
+                evenNumbers = new int[numbers.get(x)];
                 position++;
                 continue;
 
